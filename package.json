@@ -1,0 +1,12 @@
+{
+  "name": "buggy-project",
+  "version": "1.0.0",
+  "description": "Thử thách DevOps cuối khóa",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
