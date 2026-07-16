@@ -3,7 +3,7 @@ name: CI/CD Pipeline Mini Game
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
@@ -17,8 +17,7 @@ jobs:
         with:
           host: ${{ secrets.VPS_HOST }}
           port: ${{ secrets.VPS_PORT }}
-          # LỖI 1: Cố tình viết sai biến VPS_USERNAME thành VPS_USERNAMEE
-          username: ${{ secrets.VPS_USERNAMEE }}
+          username: ${{ secrets.VPS_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "."
           target: "/home/${{ secrets.VPS_USERNAME }}/sample-project"
